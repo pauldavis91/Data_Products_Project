@@ -1,0 +1,30 @@
+---
+title: "My Shiny App"
+author: "Paul Davis"
+date: "October 26, 2018"
+output: ioslides_presentation
+---
+
+##Background Information
+####This App was built as pert of the course project on coursera. 
+####The information for this app was collected from the 'Women' dataset in R
+####The app can be found on the below link
+###https://pauldavis91.shinyapps.io/Project_App/
+####Source code for this app (ui.R and server.R files) are available on GitHub address
+###
+
+***
+
+##What this app does?
+####This app will predict the weight of woman corresponding to the given height.
+####he prection model is based on the 'Women' data set in R.
+
+##'Women' dataset overview
+```{r echo = TRUE}
+summary(women)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
