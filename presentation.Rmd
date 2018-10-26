@@ -6,25 +6,30 @@ output: ioslides_presentation
 ---
 
 ##Background Information
-####This App was built as pert of the course project on coursera. 
-####The information for this app was collected from the 'Women' dataset in R
-####The app can be found on the below link
-###https://pauldavis91.shinyapps.io/Project_App/
-####Source code for this app (ui.R and server.R files) are available on GitHub address
-###
 
-***
+####This App was built as pert of the course project on coursera. 
+####The app can be found on the below link,
+###https://pauldavis91.shinyapps.io/Project_App/
+####Source code for this app (ui.R and server.R files) are available on GitHub address,
+###https://github.com/pauldavis91/Data_Products_Project.git
+
 
 ##What this app does?
+
 ####This app will predict the weight of woman corresponding to the given height.
-####he prection model is based on the 'Women' data set in R.
+####The prection model is based on the 'Women' data set in R.
+####Summary of the data set is give in the next slide.
 
 ##'Women' dataset overview
 ```{r echo = TRUE}
 summary(women)
 ```
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+##Plot for relationship between women's weight and height
+```{r setup, echo=FALSE}
+plot(women$height, women$weight, xlab = "Height", ylab = "Weight")
 ```
+
+##Thanks
+###Try and let me know what you think about the app
 
